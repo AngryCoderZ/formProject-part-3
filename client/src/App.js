@@ -6,7 +6,7 @@ import { BrowserRouter, Route, Routes } from 'react-router-dom'
 import CreateForm from './component/createForm/CreateForm'
 import GetForm from './component/getForm/GetForm'
 import Header from './component/header/Header'
-
+import EditForm from './component/editForm/EditForm'
 const App = () => {
   return (
     <div className='container'>
@@ -15,6 +15,7 @@ const App = () => {
         <Routes>
           <Route path="/" element={<GetForm />} />
           <Route path="/create" element={<CreateForm />} />
+          <Route path="/edit/:userId" element={<EditForm />} />
         </Routes>
       </BrowserRouter>
 
